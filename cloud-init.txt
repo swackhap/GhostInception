@@ -1,0 +1,23 @@
+#cloud-config
+runcmd:
+ - [ sh, -c, "mkdir /run/mydir" ]
+ - [ sh, -c, "curl -O https://releases.hashicorp.com/vagrant/2.2.6/vagrant_2.2.6_x86_64.deb" ]
+ - [ sh, -c, "sudo apt install ./vagrant_2.2.6_x86_64.deb" ]
+ - [ sh, -c, "vagrant --version >> vagrantversion.txt" ]
+ - [ sh, -c, "sudo vagrant plugin install vagrant-libvirt" ]
+package_update: true
+package_upgrade: true
+packages:
+ - virtualbox
+ - qemu
+ - qemu-kvm
+ - qemu-utils
+ - libvirt-bin
+ - libvirt-dev
+ - ubuntu-vm-builder
+ - bridge-utils
+ - python-pip
+ - python-jinja2
+ - python-ipaddress
+ - python-pydotplus
+ - gcc
