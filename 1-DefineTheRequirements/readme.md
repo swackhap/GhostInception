@@ -14,6 +14,6 @@ For security, we should only allow SSH from the Internet into the cloud VM.
 
 This simulation environment is targeted at Cumulus Networks users that want to [use Vagrant and Libvirt with KVM or QEMU and Cumulus VX virtual machines whose interconnections are defined by a topology.dot file.](https://docs.cumulusnetworks.com/cumulus-vx/Development-Environments/Vagrant-and-Libvirt-with-KVM-or-QEMU/)
 
-Once the VM is deployed, the user should be able to SSH to it and immediately clone a GIT repository that defines their infrastructure, then use the open source Topology_Converter tool to convert the topology.dot file into a Vagrant file.
+Once the VM is deployed, the user should be able to SSH to it and immediately clone a GIT repository that defines their infrastructure, then use the open source [Topology_Converter](https://gitlab.com/cumulus-consulting/tools/topology_converter/) tool to convert the topology.dot file into a Vagrant file.
 
 Many thanks to Rama Dharba and the Cumulus Professional Services team for their help in bringing our new datacenter network to fruition.
